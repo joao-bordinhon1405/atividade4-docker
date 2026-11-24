@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Contatos - Bordinhon Store{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Contatos</h1>
+
+<div class="row g-4">
+    <div class="col-md-7">
+        <div class="formulario-contato">
+            <h2>Entre em contato</h2>
+            <form method="POST" action="/contatos">
+                <div class="mb-3">
+                    <label class="form-label">Nome:</label>
+                    <input type="text" name="nome" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email:</label>
+                    <input type="email" name="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Mensagem:</label>
+                    <textarea name="mensagem" class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary botao-contato">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-md-5">
+        <h2>Outras formas de contato</h2>
+        <p>Você também pode falar com a gente através dos nossos canais.</p>
+        <div class="card contato-card p-3 mb-3">
+            <h5>Instagram</h5>
+            <p class="mb-0">@bordinhonstore</p>
+        </div>
+        <div class="card contato-card p-3 mb-3">
+            <h5>WhatsApp</h5>
+            <p class="mb-0">(XX) xxxxx-xxxx</p>
+        </div>
+        <div class="card contato-card p-3">
+            <h5>E-mail</h5>
+            <p class="mb-0">contato@bordinhonstore.com</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

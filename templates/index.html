@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block title %}Início - Bordinhon Store{% endblock %}
+
+{% block content %}
+
+<div class="container col-xxl-8 px-4 py-5 hero">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="{{ url_for('static', filename='imagens/camisa_barcelona_home_2024_25_vinho_5107_1_d341e920ec46adf8221fdfc56de512dc.webp') }}" class="d-block mx-lg-auto img-fluid" alt="Camisa do Barcelona">
+                </div>
+                    <div class="col-lg-6 hero-conteudo">
+                        <h1 class="display-5 fw-bold lh-1 mb-3">Vista a paixão pelo futebol</h1>
+                        <h2 class=" fw-semibold text-secondary mb-4 subtitulo-hero">Camisas dos maiores clubes e seleções</h2>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn btn-dark btn-lg px-4 me-md-2" > Ver coleção </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="container text-center py-3">
+            <hr>
+            <h2 class="text-muted mb-0">Tudo para quem vive o futebol</h2>
+            <hr>
+        </div>
+   
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row align-items-center">
+            <div class="col text-center">
+                <div class="fs-1">✓</div>
+                <h2 class="fw-semibold">Qualidade</h2>
+                <p>Produtos selecionados para você</p>
+            </div>
+            <div class="col text-center">
+                <div class="fs-1">🚚</div>
+                <h2 class="fw-semibold">Envio</h2>
+                <p>Entrega rápida e segura</p>
+            </div>
+            <div class="col text-center">
+                <div class="fs-1">🔒</div>
+                <h2 class="fw-semibold">Segurança</h2>
+                <p>Compra protegida do início ao fim</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center fw-semibold mb-5">Produtos em Destaque</h2>
+        <div class="row g-4 align-items-stretch">
+            <div class="col">
+        <div class="card produto">
+            <img class="card-img-top w-50 mx-auto" src="{{ url_for('static', filename='imagens/camisa corinthians 26-27.webp') }}" alt="Camisa Corinthians">
+            <div class="card-body">
+            <h4 class="card-title text-center titulo-produto">
+                Camisa Corinthians temporada 2026/2027</h4>
+            <p class="card-text text-center fw-bold fs-5">
+                R$ 249,90</p>
+                <div class="text-center">
+            <a href="#" class="btn btn-dark btn-lg w-100">
+                Ver produto</a>
+                </div>
+            </div>
+            </div>
+        </div>
+            <div class="col">
+                <div class="card produto">
+                    <img class="card-img-top w-50 mx-auto" src="{{ url_for('static', filename='imagens/camisa arsenal 25-26.webp') }}" alt="Camisa Arsenal">
+                    <div class="card-body">
+                    <h4 class="card-title text-center titulo-produto">
+                        Camisa Arsenal temporada 2025/2026</h4>
+                        <p class="card-text text-center fw-bold fs-5">R$ 199,90</p>
+                        <div class="text-center">
+                        <a href="#" class="btn btn-dark btn-lg w-100">
+                            Ver produto</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card produto">
+                    <img class="card-img-top w-50 mx-auto" src="{{ url_for('static', filename='imagens/Argentina shirt.jpg') }}" alt="Camisa Argentina">
+                    <div class="card-body">
+                        <h4 class="card-title text-center titulo-produto">
+                            Camisa Argentina temporada 2026/2027</h4>
+                            <p class="card-text text-center fw-bold fs-5">R$ 299,90</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-dark btn-lg w-100">
+                                    Ver produto
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+
+
+
+            <div class="container">
+                <div class="p-5 text-center bg-primary text-white rounded">
+                    <h2 class="fw-semibold display-6">Encontre a camisa do seu time</h2>
+                    <p>Vista a sua paixão dentro e fora dos estádios</p>
+                    <a href="#" class="btn btn-light">Ver coleção</a>
+                </div>
+            </div>
+{% endblock %}

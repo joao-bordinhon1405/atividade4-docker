@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Bordinhon Store{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="bg-dark text-white p-3 mb-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="{{ url_for('index') }}" class="text-white text-decoration-none fs-4 fw-bold">
+                Bordinhon Store
+            </a>
+            <nav>
+                <a href="{{ url_for('index') }}" class="text-white me-3 text-decoration-none">Início</a>
+                <a href="{{ url_for('quem_somos') }}" class="text-white me-3 text-decoration-none">Quem Somos</a>
+                <a href="{{ url_for('contatos') }}" class="text-white me-3 text-decoration-none">Contatos</a>
+                <a href="{{ url_for('listar') }}" class="text-white text-decoration-none">Mensagens</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-4">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <h5>Bordinhon Store</h5>
+            <p class="mb-1">Sua paixão pelo futebol - Camisas de clubes e seleções</p>
+            <p class="mb-2">
+                <a href="{{ url_for('index') }}" class="text-white text-decoration-none">Início</a> |
+                <a href="{{ url_for('quem_somos') }}" class="text-white text-decoration-none">Quem somos</a> |
+                <a href="{{ url_for('contatos') }}" class="text-white text-decoration-none">Contato</a> |
+                <a href="{{ url_for('listar') }}" class="text-white text-decoration-none">Mensagens</a>
+            </p>
+            <hr class="border-secondary">
+            <p class="mb-0 small">
+                © 2026 Bordinhon Store | Desenvolvido por: <strong>João Gabriel da Costa Bordinhon</strong> - Atividade 4
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

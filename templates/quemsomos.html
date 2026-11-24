@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block title %}Quem Somos - Bordinhon Store{% endblock %}
+
+{% block content %}
+    <h1 class="text-center fw-bold py-5">Apresentação</h1>
+
+    <section>
+        <div class="container bg-white py-5">
+            <div class="row align-items-center g-5 historia">
+                <div class="col-lg-6">
+                    <h1 class="fw-bold mb-2">Quem somos</h1>
+                    <h3 class="fw-semibold">Como surgiu a ideia da loja?</h3>
+                    <p>
+                        A ideia da loja surgiu a partir de uma conversa entre amigos que compartilham a mesma paixão pelo futebol.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 text-center">
+                    <img src="{{ url_for('static', filename='imagens/camisas de time.png') }}" class="img-fluid rounded w-50" alt="Futebol">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="bg-light">
+            <div class="container py-5">
+                <div class="text-center texto-paixao">
+                    <h2 class="fw-bold">Nossa paixão pelo futebol</h2>
+                    <p class="mt-3">A paixão pelo futebol começou desde os 4 anos de idade, com a copa do mundo de 2010. De lá pra cá, sempre foi cultivado o amor pelo esporte.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold">Por que trabalhar com camisas?</h2>
+                    <p class="mt-3">Sempre tive o gosto de adquirir camisas de futebol e, a ideia de colecionar camisas dos mais variados times começou há 4 anos.</p>
+                </div>
+
+                <div class="col-lg-6 text-center">
+                    <div class="bg-dark text-white rounded p-4">
+                        <div class="display-3">⚽</div>
+                        <h3 class="fw-semibold mt-3">Paixão pelo futebol</h3>
+                        <p class="mb-0">Camisas que representam histórias, clubes e torcedores</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light">
+        <div class="container py-5">
+            <h2 class="text-center fw-bold mb-5">O que buscamos oferecer aos clientes?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4 valor-card">
+                        <div class="display-5">👕</div>
+                        <h3 class="fw-semibold mt-3">Conforto</h3>
+                        <p>Produtos pensados para que você possa vestir sua paixão pelo futebol em conforto</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4 valor-card">
+                        <div class="display-5">⚽</div>
+                        <h3 class="fw-semibold mt-3">Paixão</h3>
+                        <p>Buscamos aproximar o torcedor dos clubes que fazem parte da sua história.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4 valor-card">
+                        <div class="display-5">⚡</div>
+                        <h3 class="fw-semibold mt-3">Praticidade</h3>
+                        <p>Uma experiência simples para encontrar a camisa do time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container py-5">
+            <div class="text-center valores">
+                <h2 class="fw-bold">Nossos valores</h2>
+                <p class="mt-3">
+                    Buscamos representar nossos valores por meio de uma
+                    variedade de produtos, qualidade e preços acessíveis
+                    que caibam no seu bolso.
+                </p>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

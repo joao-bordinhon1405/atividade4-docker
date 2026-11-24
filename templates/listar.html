@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Mensagens Recebidas - Bordinhon Store{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Mensagens Cadastradas</h1>
+
+{% if registros %}
+<div class="table-responsive">
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Mensagem</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in registros %}
+            <tr>
+                <td>{{ item.id }}</td>
+                <td>{{ item.nome }}</td>
+                <td>{{ item.email }}</td>
+                <td>{{ item.mensagem }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% else %}
+<div class="alert alert-info">Nenhuma mensagem cadastrada no banco de dados ainda.</div>
+{% endif %}
+{% endblock %}
